@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 #logo_container {
 	width: 150px;
 }
@@ -50,14 +54,14 @@ nav {
 	margin: auto;
 }
 
-ul {
+#nav_list {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
 	padding: 0;
 }
 
-li {
+.nav_item {
 	display: flex;
 	justify-content: center;
 	padding: 10px;
@@ -74,4 +78,49 @@ li {
 .navbar_icon_container {
 	height: 30px;
 	width: 30px;
+}
+
+main {
+	background-color: rgb(217, 217, 217);
+}
+
+#main_container {
+	background-color: white;
+	max-width: 1200px;
+	margin: auto;
+}
+
+#list_articles {
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+	padding: 0;
+}
+
+.main_item {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container_item_image {
+	height: 300px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.item_title {
+	display: flex;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.lemonde_icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 }
